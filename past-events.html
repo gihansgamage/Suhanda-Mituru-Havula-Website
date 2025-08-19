@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>පසුගිය වැඩසටහන් - Suhanda Mituru Havula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+Sinhala:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', 'Noto Sans Sinhala', sans-serif; }
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation Bar (Same as index.html) -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo.png" alt="Logo" class="h-12 w-12 rounded-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/50x50/3b82f6/ffffff?text=SMH';">
+                <div>
+                    <h1 class="text-xl font-bold text-gray-900" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h1>
+                    <p class="text-xs text-gray-500" data-lang-si="අපි කවුද?" data-lang-en="Who we are?">අපි කවුද?</p>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html#home" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="මුල් පිටුව" data-lang-en="Home">මුල් පිටුව</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a>
+                <a href="past-events.html" class="text-blue-600 font-bold" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="සම්බන්ධ වන්න" data-lang-en="Contact Us">සම්බන්ධ වන්න</a>
+                <a href="index.html#donate" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition transform hover:scale-105" data-lang-si="පරිත්‍යාග" data-lang-en="Donate">පරිත්‍යාග</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="lang-switcher" class="text-sm font-medium text-gray-600 hover:text-blue-600 p-2 rounded-md bg-gray-100 hover:bg-gray-200 transition"><span class="current-lang">English</span></button>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100"><i data-lucide="menu"></i></button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#home" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="මුල් පිටුව" data-lang-en="Home">මුල් පිටුව</a>
+            <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a>
+            <a href="past-events.html" class="block py-2 text-blue-600 font-bold" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="සම්බන්ධ වන්න" data-lang-en="Contact Us">සම්බන්ධ වන්න</a>
+            <a href="index.html#donate" class="block mt-2 text-center bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-lang-si="පරිත්‍යාග" data-lang-en="Donate">පරිත්‍යාග</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="past-events-gallery" class="fade-in">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900" data-lang-si="පසුගිය වැඩසටහන් ගැලරිය" data-lang-en="Past Events Gallery">පසුගිය වැඩසටහන් ගැලරිය</h1>
+                <p class="mt-2 text-gray-600" data-lang-si="අපගේ සාර්ථක ප්‍රජා සත්කාර." data-lang-en="A look back at our successful community initiatives.">අපගේ සාර්ථක ප්‍රජා සත්කාර.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"><img src="https://placehold.co/400x250/86efac/1c1917?text=Past+Event+1" alt="Environmental Cleanup" class="w-full h-48 object-cover"><div class="p-4"><p class="text-sm text-gray-500">2024-07-20</p><h4 class="font-bold mt-1" data-lang-si="පරිසර පිරිසිදු කිරීමේ වැඩසටහන" data-lang-en="Environmental Cleanup Program">පරිසර පිරිසිදු කිරීමේ වැඩසටහන</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="අපි ප්‍රදේශයේ ප්‍රධාන මාර්ග සහ පොදු ස්ථාන පිරිසිදු කළෙමු." data-lang-en="We cleaned the main roads and public areas of the region.">අපි ප්‍රදේශයේ ප්‍රධාන මාර්ග සහ පොදු ස්ථාන පිරිසිදු කළෙමු.</p></div></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"><img src="https://placehold.co/400x250/f9a8d4/1c1917?text=Past+Event+2" alt="Sil Program" class="w-full h-48 object-cover"><div class="p-4"><p class="text-sm text-gray-500">2024-06-10</p><h4 class="font-bold mt-1" data-lang-si="සිල් සමාදන් වැඩසටහන" data-lang-en="Sil Program for Poson Poya">සිල් සමාදන් වැඩසටහන</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="පොසොන් පොහොය නිමිත්තෙන් ප්‍රදේශයේ විහාරස්ථානයේදී සිල් වැඩසටහනක් සංවිධානය කරන ලදී." data-lang-en="A Sil program was organized at the local temple for Poson Poya day.">පොසොන් පොහොය නිමිත්තෙන් ප්‍රදේශයේ විහාරස්ථානයේදී සිල් වැඩසටහනක් සංවිධානය කරන ලදී.</p></div></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"><img src="https://placehold.co/400x250/fde047/1c1917?text=Past+Event+3" alt="Donation to Elders' Home" class="w-full h-48 object-cover"><div class="p-4"><p class="text-sm text-gray-500">2024-05-01</p><h4 class="font-bold mt-1" data-lang-si="වැඩිහිටි නිවාසයට පරිත්‍යාගයක්" data-lang-en="Donation to Elders' Home">වැඩිහිටි නිවාසයට පරිත්‍යාගයක්</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="අවශ්‍යතා ඇති වැඩිහිටියන් සඳහා වියළි සලාක සහ අත්‍යවශ්‍ය ද්‍රව්‍ය පරිත්‍යාග කරන ලදී." data-lang-en="Dry rations and essential items were donated to support elders in need.">අවශ්‍යතා ඇති වැඩිහිටියන් සඳහා වියළි සලාක සහ අත්‍යවශ්‍ය ද්‍රව්‍ය පරිත්‍යාග කරන ලදී.</p></div></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"><img src="https://placehold.co/400x250/a5b4fc/1e293b?text=Past+Event+4" alt="Shramadana Campaign" class="w-full h-48 object-cover"><div class="p-4"><p class="text-sm text-gray-500">2024-04-15</p><h4 class="font-bold mt-1" data-lang-si="ශ්‍රමදාන ව්‍යාපාරය" data-lang-en="Shramadana Campaign">ශ්‍රමදාන ව්‍යාපාරය</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="ප්‍රජා ශාලාව අලුත්වැඩියා කිරීම සඳහා ශ්‍රමදානයක්." data-lang-en="A shramadana to repair the community hall.">ප්‍රජා ශාලාව අලුත්වැඩියා කිරීම සඳහා ශ්‍රමදානයක්.</p></div></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"><img src="https://placehold.co/400x250/fca5a5/1e293b?text=Past+Event+5" alt="Medical Camp" class="w-full h-48 object-cover"><div class="p-4"><p class="text-sm text-gray-500">2024-03-22</p><h4 class="font-bold mt-1" data-lang-si="වෛද්‍ය සායනය" data-lang-en="Medical Camp">වෛද්‍ය සායනය</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="ප්‍රදේශයේ ජනතාව සඳහා නොමිලේ වෛද්‍ය සායනයක්." data-lang-en="A free medical clinic for the local community.">ප්‍රදේශයේ ජනතාව සඳහා නොමිලේ වෛද්‍ය සායනයක්.</p></div></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"><img src="https://placehold.co/400x250/93c5fd/1e293b?text=Past+Event+6" alt="Scholarship Awards" class="w-full h-48 object-cover"><div class="p-4"><p class="text-sm text-gray-500">2024-02-28</p><h4 class="font-bold mt-1" data-lang-si="ශිෂ්‍යත්ව ප්‍රදානය" data-lang-en="Scholarship Awards">ශිෂ්‍යත්ව ප්‍රදානය</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="අවශ්‍යතා සහිත දක්ෂ සිසුන් සඳහා ශිෂ්‍යත්ව ප්‍රදානය." data-lang-en="Awarding scholarships to talented students in need.">අවශ්‍යතා සහිත දක්ෂ සිසුන් සඳහා ශිෂ්‍යත්ව ප්‍රදානය.</p></div></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-800 text-white"><div class="container mx-auto px-6 py-8"><div class="grid md:grid-cols-3 gap-8 text-center md:text-left"><div><h4 class="font-bold text-lg mb-2" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h4><p class="text-sm text-gray-400" data-lang-si="ප්‍රජාව වෙනුවෙන් එක්වෙමු." data-lang-en="United for the community.">ප්‍රජාව වෙනුවෙන් එක්වෙමු.</p><div class="flex justify-center md:justify-start space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"></i></a></div></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ඉක්මන් සබැඳි" data-lang-en="Quick Links">Quick Links</h4><ul class="space-y-1 text-sm"><li><a href="index.html#about" class="text-gray-400 hover:text-white" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a></li><li><a href="past-events.html" class="text-gray-400 hover:text-white" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a></li><li><a href="index.html#donate" class="text-gray-400 hover:text-white" data-lang-si="පරිත්‍යාග" data-lang-en="Donate">Donate</a></li></ul></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ප්‍රයෝජනවත්" data-lang-en="Utility">Utility</h4><ul class="space-y-1 text-sm"><li><a href="accounts.html" class="text-gray-400 hover:text-white" data-lang-si="ගිණුම් විස්තර" data-lang-en="Account Details">Account Details</a></li></ul></div></div><div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500"><p>&copy; 2024 Suhanda Mituru Havula. All Rights Reserved.</p></div></div></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+            const langSwitcher = document.getElementById('lang-switcher');
+            const currentLangSpan = langSwitcher.querySelector('.current-lang');
+            const allTextElements = document.querySelectorAll('[data-lang-si]');
+            let currentLanguage = 'si';
+            function updateTexts() {
+                allTextElements.forEach(el => {
+                    const text = el.getAttribute(`data-lang-${currentLanguage}`);
+                    if (text) el.innerHTML = text;
+                });
+                currentLangSpan.textContent = currentLanguage === 'si' ? 'English' : 'සිංහල';
+                document.documentElement.lang = currentLanguage;
+            }
+            langSwitcher.addEventListener('click', () => {
+                currentLanguage = currentLanguage === 'si' ? 'en' : 'si';
+                updateTexts();
+            });
+            updateTexts();
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        });
+    </script>
+</body>
+</html>

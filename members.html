@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සාමාජිකයින් - Suhanda Mituru Havula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+Sinhala:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', 'Noto Sans Sinhala', sans-serif; }
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation Bar -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo.png" alt="Logo" class="h-12 w-12 rounded-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/50x50/3b82f6/ffffff?text=SMH';">
+                <div>
+                    <h1 class="text-xl font-bold text-gray-900" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h1>
+                    <p class="text-xs text-gray-500" data-lang-si="අපි කවුද?" data-lang-en="Who we are?">අපි කවුද?</p>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html#home" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="මුල් පිටුව" data-lang-en="Home">මුල් පිටුව</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a>
+                <a href="members.html" class="text-blue-600 font-bold" data-lang-si="සාමාජිකයින්" data-lang-en="Members">Members</a>
+                <a href="past-events.html" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-600 transition" data-lang-si="සම්බන්ධ වන්න" data-lang-en="Contact Us">සම්බන්ධ වන්න</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="lang-switcher" class="text-sm font-medium text-gray-600 hover:text-blue-600 p-2 rounded-md bg-gray-100 hover:bg-gray-200 transition"><span class="current-lang">English</span></button>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100"><i data-lucide="menu"></i></button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#home" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="මුල් පිටුව" data-lang-en="Home">මුල් පිටුව</a>
+            <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a>
+            <a href="members.html" class="block py-2 text-blue-600 font-bold" data-lang-si="සාමාජිකයින්" data-lang-en="Members">Members</a>
+            <a href="past-events.html" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="සම්බන්ධ වන්න" data-lang-en="Contact Us">සම්බන්ධ වන්න</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section class="fade-in">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900" data-lang-si="අපගේ සාමාජිකයින්" data-lang-en="Our Members">Our Members</h1>
+                <p class="mt-2 text-gray-600" data-lang-si="අපගේ ප්‍රජාවේ ශක්තිය." data-lang-en="The strength of our community.">අපගේ ප්‍රජාවේ ශක්තිය.</p>
+            </div>
+
+            <!-- Committee Members -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-center mb-8" data-lang-si="අපගේ කමිටුව" data-lang-en="Our Committee">Our Committee</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center max-w-5xl mx-auto">
+                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition space-y-1"><h4 class="font-bold text-lg" data-lang-si="සභාපති" data-lang-en="President">සභාපති</h4><p class="text-gray-800">Mr. A.B.C. Perera</p><p class="text-sm text-gray-500">+94 77 123 4567</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition space-y-1"><h4 class="font-bold text-lg" data-lang-si="ලේකම්" data-lang-en="Secretary">ලේකම්</h4><p class="text-gray-800">Mrs. D.E.F. Silva</p><p class="text-sm text-gray-500">+94 71 234 5678</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition space-y-1"><h4 class="font-bold text-lg" data-lang-si="භාණ්ඩාගාරික" data-lang-en="Treasurer">භාණ්ඩාගාරික</h4><p class="text-gray-800">Mr. G.H.I. Fernando</p><p class="text-sm text-gray-500">+94 76 345 6789</p></div>
+                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition space-y-1"><h4 class="font-bold text-lg" data-lang-si="කමිටු සාමාජික" data-lang-en="Committee Member">කමිටු සාමාජික</h4><p class="text-gray-800">Ms. J.K.L. Bandara</p><p class="text-sm text-gray-500">+94 75 456 7890</p></div>
+                </div>
+            </div>
+
+            <!-- All Members Table -->
+            <div>
+                <h3 class="text-2xl font-bold text-center mb-8" data-lang-si="සාමාජික ලැයිස්තුව" data-lang-en="Member List">Member List</h3>
+                <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="p-4 font-bold" data-lang-si="නම" data-lang-en="Name">Name</th>
+                                    <th class="p-4 font-bold" data-lang-si="ගම" data-lang-en="Village">Village</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr><td class="p-4">Mr. M.N.O. Peiris</td><td class="p-4">Pinnawala</td></tr>
+                                <tr><td class="p-4">Ms. P.Q.R. Jayasuriya</td><td class="p-4">Honamulla</td></tr>
+                                <tr><td class="p-4">Mr. S.T.U. Rathnayake</td><td class="p-4">Balangoda</td></tr>
+                                <tr><td class="p-4">Mrs. V.W.X. Dias</td><td class="p-4">Pinnawala</td></tr>
+                                <tr><td class="p-4">Mr. Y.Z.A. Costa</td><td class="p-4">Honamulla</td></tr>
+                                <tr><td class="p-4">Ms. B.C.D. Gunawardena</td><td class="p-4">Balangoda</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12"><div class="container mx-auto px-6 py-8"><div class="grid md:grid-cols-3 gap-8 text-center md:text-left"><div><h4 class="font-bold text-lg mb-2" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h4><p class="text-sm text-gray-400" data-lang-si="ප්‍රජාව වෙනුවෙන් එක්වෙමු." data-lang-en="United for the community.">ප්‍රජාව වෙනුවෙන් එක්වෙමු.</p><div class="flex justify-center md:justify-start space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"></i></a></div></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ඉක්මන් සබැඳි" data-lang-en="Quick Links">Quick Links</h4><ul class="space-y-1 text-sm"><li><a href="index.html#about" class="text-gray-400 hover:text-white" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a></li><li><a href="members.html" class="text-gray-400 hover:text-white" data-lang-si="සාමාජිකයින්" data-lang-en="Members">Members</a></li><li><a href="past-events.html" class="text-gray-400 hover:text-white" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a></li></ul></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ප්‍රයෝජනවත්" data-lang-en="Utility">Utility</h4><ul class="space-y-1 text-sm"><li><a href="accounts.html" class="text-gray-400 hover:text-white" data-lang-si="ගිණුම් විස්තර" data-lang-en="Account Details">Account Details</a></li></ul></div></div><div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500"><p>&copy; 2024 Suhanda Mituru Havula. All Rights Reserved.</p></div></div></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+            const langSwitcher = document.getElementById('lang-switcher');
+            const currentLangSpan = langSwitcher.querySelector('.current-lang');
+            const allTextElements = document.querySelectorAll('[data-lang-si]');
+            let currentLanguage = 'si';
+            function updateTexts() {
+                allTextElements.forEach(el => {
+                    const text = el.getAttribute(`data-lang-${currentLanguage}`);
+                    if (text) el.innerHTML = text;
+                });
+                currentLangSpan.textContent = currentLanguage === 'si' ? 'English' : 'සිංහල';
+                document.documentElement.lang = currentLanguage;
+            }
+            langSwitcher.addEventListener('click', () => {
+                currentLanguage = currentLanguage === 'si' ? 'en' : 'si';
+                updateTexts();
+            });
+            updateTexts();
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        });
+    </script>
+</body>
+</html>
