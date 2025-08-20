@@ -13,6 +13,8 @@
         body { font-family: 'Inter', 'Noto Sans Sinhala', sans-serif; scroll-behavior: smooth; }
         .fade-in { animation: fadeIn 1s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .modal-content { animation: fadeIn-up 0.3s ease-out forwards; }
+        @keyframes fadeIn-up { from { opacity: 0; transform: translateY(30px) scale(0.95); } to { opacity: 1; transform: translateY(0) scale(1); } }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -53,9 +55,9 @@
         <section id="home" class="text-center py-20 bg-gray-100 rounded-2xl fade-in">
             <div class="container mx-auto px-4">
                 <img src="assets/logo.png" alt="Logo" class="h-32 w-32 mx-auto mb-6 rounded-full object-cover shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/128x128/3b82f6/ffffff?text=SMH';">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900" data-lang-si="සුහද මිතුරු හවුල වෙත සාදරයෙන් පිළිගනිමු" data-lang-en="Welcome to Suhanda Mituru Havula">සුහද මිතුරු හවුල වෙත සාදරයෙන් පිළිගනිමු</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900" data-lang-si="සුහද මිතුරු හවුල වෙත සාදරයෙන් පිළිගනිමු !" data-lang-en="Welcome to Suhanda Mituru Havula !">සුහද මිතුරු හවුල වෙත සාදරයෙන් පිළිගනිමු</h2>
                 <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto" data-lang-si="සමාජ සත්කාර, ආගමික හා පුණ්‍ය කටයුතු තුළින් ප්‍රජාව සවිබල ගැන්වීම." data-lang-en="Empowering the community through social, religious, and charitable activities.">සමාජ සත්කාර, ආගමික හා පුණ්‍ය කටයුතු තුළින් ප්‍රජාව සවිබල ගැන්වීම.</p>
-                <a href="#membership" class="mt-8 inline-block bg-blue-500 text-white font-bold px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105" data-lang-si="සාමාජිකත්වය ලබාගන්න" data-lang-en="Request Membership">සාමාජිකත්වය ලබාගන්න</a>
+                <button id="constitution-button" class="mt-8 inline-block bg-blue-500 text-white font-bold px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105" data-lang-si="ව්‍යවස්ථාව කියවන්න" data-lang-en="Read Constitution">ව්‍යවස්ථාව කියවන්න</button>
             </div>
         </section>
 
@@ -115,7 +117,7 @@
             </div>
             <!-- Our Programs -->
             <div>
-                <div class="text-center mb-12"><h2 class="text-3xl font-bold text-gray-900" data-lang-si="අපගේ වැඩසටහන්" data-lang-en="Our Programs">අපගේ වැඩසටහන්</h2><p class="mt-2 text-gray-600" data-lang-si="අප ක්‍රියාත්මක වන ප්‍රධාන ක්ෂේත්‍ර." data-lang-en="The main areas we focus on.">අප ක්‍රියාත්මක වන ප්‍රධාන ක්ෂේත්‍ර.</p></div>
+                <div class="text-center mb-12"><h2 class="text-3xl font-bold text-gray-900" data-lang-si="අපගේ වැඩසටහන්" data-lang-en="Our Programs">අපගේ වැඩසටහන්</h2><p class="mt-2 text-gray-600" data-lang-si="අප ක්‍රියාත්මක වන ප්‍රධාන ක්ෂੇත්‍ර." data-lang-en="The main areas we focus on.">අප ක්‍රියාත්මක වන ප්‍රධාන ක්ෂේත්‍ර.</p></div>
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="text-center p-6 bg-white rounded-xl shadow-md"><i data-lucide="moon-star" class="mx-auto text-yellow-500 w-12 h-12 mb-4"></i><h4 class="font-bold text-lg" data-lang-si="ආගමික කටයුතු" data-lang-en="Religious Activities">ආගමික කටයුතු</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="පෝය දින සිල් වැඩසටහන්, කඨින පින්කම් සහ අනෙකුත් ආගමික උත්සව සඳහා දායකත්වය." data-lang-en="Contributing to Poya day programs, Kathina ceremonies, and other religious events.">පෝය දින සිල් වැඩසටහන්, කඨින පින්කම් සහ අනෙකුත් ආගමික උත්සව සඳහා දායකත්වය.</p></div>
                     <div class="text-center p-6 bg-white rounded-xl shadow-md"><i data-lucide="heart-handshake" class="mx-auto text-green-500 w-12 h-12 mb-4"></i><h4 class="font-bold text-lg" data-lang-si="පුණ්‍ය කටයුතු" data-lang-en="Charity Programs">පුණ්‍ය කටයුතු</h4><p class="text-sm text-gray-600 mt-2" data-lang-si="ලේ දන්දීමේ කඳවුරු, ශිෂ්‍යත්ව ප්‍රදානය, සහ අවශ්‍යතා ඇති පවුල් සඳහා ආධාර." data-lang-en="Blood donation camps, scholarship awards, and aid for families in need.">ලේ දන්දීමේ කඳවුරු, ශිෂ්‍යත්ව ප්‍රදානය, සහ අවශ්‍යතා ඇති පවුල් සඳහා ආධාර.</p></div>
@@ -160,8 +162,22 @@
         </section>
     </main>
 
+    <!-- Constitution Modal -->
+    <div id="constitution-modal" class="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-2xl relative modal-content max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center border-b pb-3 mb-4">
+                <h3 class="text-2xl font-bold" data-lang-si="සංවිධාන ව්‍යවස්ථාව" data-lang-en="Organization Constitution">සංවිධාන ව්‍යවස්ථාව</h3>
+                <button id="close-modal-button" class="text-gray-500 hover:text-gray-800"><i data-lucide="x"></i></button>
+            </div>
+            <div class="overflow-y-auto text-gray-700 space-y-4">
+                <p data-lang-si="මෙය සංවිධානයේ ව්‍යවස්ථාව සඳහා වන placeholder පාඨයයි. මෙහිදී සංවිධානයේ නම, අරමුණු, සාමාජිකත්වය, නිලධාරී මණ්ඩලය, රැස්වීම්, මූල්‍ය කටයුතු සහ අනෙකුත් නීති රීති ඇතුළත් කළ හැක." data-lang-en="This is placeholder text for the organization's constitution. Here, you can include the organization's name, objectives, membership rules, committee structure, meeting procedures, financial regulations, and other rules.">මෙය සංවිධානයේ ව්‍යවස්ථාව සඳහා වන placeholder පාඨයයි. මෙහිදී සංවිධානයේ නම, අරමුණු, සාමාජිකත්වය, නිලධාරී මණ්ඩලය, රැස්වීම්, මූල්‍ය කටයුතු සහ අනෙකුත් නීති රීති ඇතුළත් කළ හැක.</p>
+                <p data-lang-si="උදාහරණයක් ලෙස: 1.1 සංවිධානයේ නම 'සුහද මිතුරු හවුල' වේ. 1.2 මෙහි ප්‍රධාන කාර්යාලය හොනමුල්ල, පින්නවල, බලංගොඩ හි පිහිටා ඇත." data-lang-en="For example: 1.1 The name of the organization shall be 'Suhanda Mituru Havula'. 1.2 The main office shall be located at Honamulla, Pinnawala, Balangoda.">උදාහරණයක් ලෙස: 1.1 සංවිධානයේ නම 'සුහද මිතුරු හවුල' වේ. 1.2 මෙහි ප්‍රධාන කාර්යාලය හොනමුල්ල, පින්නවල, බලංගොඩ හි පිහිටා ඇත.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white"><div class="container mx-auto px-6 py-8"><div class="grid md:grid-cols-3 gap-8 text-center md:text-left"><div><h4 class="font-bold text-lg mb-2" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h4><p class="text-sm text-gray-400" data-lang-si="ප්‍රජාව වෙනුවෙන් එක්වෙමු." data-lang-en="United for the community.">ප්‍රජාව වෙනුවෙන් එක්වෙමු.</p><div class="flex justify-center md:justify-start space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"></i></a></div></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ඉක්මන් සබැඳි" data-lang-en="Quick Links">Quick Links</h4><ul class="space-y-1 text-sm"><li><a href="index.html#about" class="text-gray-400 hover:text-white" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a></li><li><a href="members.html" class="text-gray-400 hover:text-white" data-lang-si="සාමාජිකයින්" data-lang-en="Members">Members</a></li><li><a href="past-events.html" class="text-gray-400 hover:text-white" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a></li></ul></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ප්‍රයෝජනවත්" data-lang-en="Utility">Utility</h4><ul class="space-y-1 text-sm"><li><a href="accounts.html" class="text-gray-400 hover:text-white" data-lang-si="ගිණුම් විස්තර" data-lang-en="Account Details">Account Details</a></li></ul></div></div><div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500"><p>&copy; 2024 Suhanda Mituru Havula. All Rights Reserved.</p></div></div></footer>
+    <footer class="bg-gray-800 text-white"><div class="container mx-auto px-6 py-8"><div class="grid md:grid-cols-3 gap-8 text-center md:text-left"><div><h4 class="font-bold text-lg mb-2" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h4><p class="text-sm text-gray-400" data-lang-si="හදවතින් ප්‍රජාවට සේවයක්" data-lang-en="Serving the Community with Heart">හදවතින් ප්‍රජාවට සේවයක්</p><div class="flex justify-center md:justify-start space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"></i></a></div></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ඉක්මන් සබැඳි" data-lang-en="Quick Links">Quick Links</h4><ul class="space-y-1 text-sm"><li><a href="index.html#about" class="text-gray-400 hover:text-white" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a></li><li><a href="members.html" class="text-gray-400 hover:text-white" data-lang-si="සාමාජිකයින්" data-lang-en="Members">Members</a></li><li><a href="past-events.html" class="text-gray-400 hover:text-white" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a></li></ul></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ප්‍රයෝජනවත්" data-lang-en="Utility">Utility</h4><ul class="space-y-1 text-sm"><li><a href="accounts.html" class="text-gray-400 hover:text-white" data-lang-si="ගිණුම් විස්තර" data-lang-en="Account Details">Account Details</a></li></ul></div></div><div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500"><p>&copy; 2024 Suhanda Mituru Havula. All Rights Reserved.</p></div></div></footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -169,7 +185,9 @@
             const langSwitcher = document.getElementById('lang-switcher');
             const currentLangSpan = langSwitcher.querySelector('.current-lang');
             const allTextElements = document.querySelectorAll('[data-lang-si]');
-            let currentLanguage = 'si';
+            
+            let currentLanguage = localStorage.getItem('selectedLanguage') || 'si';
+
             function updateTexts() {
                 allTextElements.forEach(el => {
                     const text = el.getAttribute(`data-lang-${currentLanguage}`);
@@ -178,11 +196,15 @@
                 currentLangSpan.textContent = currentLanguage === 'si' ? 'English' : 'සිංහල';
                 document.documentElement.lang = currentLanguage;
             }
+
             langSwitcher.addEventListener('click', () => {
                 currentLanguage = currentLanguage === 'si' ? 'en' : 'si';
+                localStorage.setItem('selectedLanguage', currentLanguage);
                 updateTexts();
             });
+
             updateTexts();
+
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
@@ -198,6 +220,25 @@
             const membershipMessage = document.getElementById('membership-message');
             membershipButton.addEventListener('click', () => {
                 membershipMessage.classList.toggle('hidden');
+            });
+
+            // Constitution Modal Logic
+            const constitutionModal = document.getElementById('constitution-modal');
+            const constitutionButton = document.getElementById('constitution-button');
+            const closeModalButton = document.getElementById('close-modal-button');
+
+            constitutionButton.addEventListener('click', () => {
+                constitutionModal.classList.remove('hidden');
+            });
+
+            closeModalButton.addEventListener('click', () => {
+                constitutionModal.classList.add('hidden');
+            });
+
+            constitutionModal.addEventListener('click', (e) => {
+                if (e.target === constitutionModal) {
+                    constitutionModal.classList.add('hidden');
+                }
             });
         });
     </script>
