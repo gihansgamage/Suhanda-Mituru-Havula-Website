@@ -17,17 +17,17 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header and Navigation Bar (Same as index.html) -->
-    <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 transition-all duration-300">
+    <!-- Header and Navigation Bar -->
+     <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3">
                 <img src="assets/logo.png" alt="Logo" class="h-12 w-12 rounded-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/50x50/3b82f6/ffffff?text=SMH';">
-               <div>
+                <div>
                     <h1 class="text-xl font-bold text-gray-900" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h1>
-                    <p class="text-xs text-gray-500" data-lang-si="ස්වේච්ඡා සංවිධානය" data-lang-en="Volunteer Organization">ස්වේච්ඡා සංවිධානය</p>
+                    <p class="text-xs text-gray-500" data-lang-si="ස්වේච්ඡා සංවිධානය" data-lang-en="Volunteer Organization">හදවතින් ප්‍රජාවට සේවයක්</p>
                 </div>
             </a>
-           <div class="hidden md:flex items-center space-x-6">
+            <div class="hidden md:flex items-center space-x-6">
                 <a href="index.html#home" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="මුල් පිටුව" data-lang-en="Home">මුල් පිටුව</a>
                 <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a>
                 <a href="past-events.html" class="block py-2 text-gray-600 hover:text-blue-600" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a>
@@ -91,16 +91,49 @@
         </div>
     </main>
 
-    <!-- Footer (Same as index.html) -->
-    <footer class="bg-gray-800 text-white mt-12"><div class="container mx-auto px-6 py-8"><div class="grid md:grid-cols-3 gap-8 text-center md:text-left"><div><h4 class="font-bold text-lg mb-2" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h4><p class="text-sm text-gray-400" data-lang-si="ප්‍රජාව වෙනුවෙන් එක්වෙමු." data-lang-en="United for the community.">ප්‍රජාව වෙනුවෙන් එක්වෙමු.</p><div class="flex justify-center md:justify-start space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"></i></a></div></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ඉක්මන් සබැඳි" data-lang-en="Quick Links">Quick Links</h4><ul class="space-y-1 text-sm"><li><a href="index.html#about" class="text-gray-400 hover:text-white" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a></li><li><a href="past-events.html" class="text-gray-400 hover:text-white" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a></li><li><a href="index.html#donate" class="text-gray-400 hover:text-white" data-lang-si="පරිත්‍යාග" data-lang-en="Donate">Donate</a></li></ul></div><div><h4 class="font-bold text-lg mb-2" data-lang-si="ප්‍රයෝජනවත්" data-lang-en="Utility">Utility</h4><ul class="space-y-1 text-sm"><li><a href="accounts.html" class="text-blue-400 font-bold" data-lang-si="ගිණුම් විස්තර" data-lang-en="Account Details">Account Details</a></li></ul></div></div><div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500"><p>&copy; 2024 Suhanda Mituru Havula. All Rights Reserved.</p></div></div></footer>
-
+    <!-- Footer -->
+       <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-bold text-lg mb-2" data-lang-si="සුහද මිතුරු හවුල" data-lang-en="Suhanda Mituru Havula">සුහද මිතුරු හවුල</h4>
+                    <p class="text-sm text-gray-400" data-lang-si="හදවතින් ප්‍රජාවට සේවයක්" data-lang-en="Serving the Community with Heart">හදවතින් ප්‍රජාවට සේවයක්</p>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2" data-lang-si="ඉක්මන් සබැඳි" data-lang-en="Quick Links">Quick Links</h4>
+                    <ul class="space-y-1 text-sm">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white" data-lang-si="අප ගැන" data-lang-en="About Us">අප ගැන</a></li>
+                        <li><a href="members.html" class="text-gray-400 hover:text-white" data-lang-si="සාමාජිකයින්" data-lang-en="Members">Members</a></li>
+                        <li><a href="past-events.html" class="text-gray-400 hover:text-white" data-lang-si="පසුගිය වැඩසටහන්" data-lang-en="Past Events">Past Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2" data-lang-si="ප්‍රයෝජනවත්" data-lang-en="Utility">Utility</h4>
+                    <ul class="space-y-1 text-sm">
+                        <li><a href="accounts.html" class="text-gray-400 hover:text-white" data-lang-si="ගිණුම් විස්තර" data-lang-en="Account Details">Account Details</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Suhanda Mituru Havula. All Rights Reserved.</p>
+                <p class="mt-1">Developed by Gihan S Gamage🖤</p>
+            </div>
+        </div>
+    </footer>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             lucide.createIcons();
             const langSwitcher = document.getElementById('lang-switcher');
             const currentLangSpan = langSwitcher.querySelector('.current-lang');
             const allTextElements = document.querySelectorAll('[data-lang-si]');
-            let currentLanguage = 'si';
+            
+            let currentLanguage = localStorage.getItem('selectedLanguage') || 'si';
+
             function updateTexts() {
                 allTextElements.forEach(el => {
                     const text = el.getAttribute(`data-lang-${currentLanguage}`);
@@ -109,11 +142,15 @@
                 currentLangSpan.textContent = currentLanguage === 'si' ? 'English' : 'සිංහල';
                 document.documentElement.lang = currentLanguage;
             }
+
             langSwitcher.addEventListener('click', () => {
                 currentLanguage = currentLanguage === 'si' ? 'en' : 'si';
+                localStorage.setItem('selectedLanguage', currentLanguage);
                 updateTexts();
             });
+
             updateTexts();
+
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
